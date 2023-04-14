@@ -49,6 +49,8 @@ RUN mv gpt4all-lora-quantized.bin gpt4all/chat/
 
 RUN pip install nomic
 
+ADD gpt4all_demo.ipynb /gpt4all_demo.ipynb
+
 ###################
 # Jupyter Kernels #
 ###################
