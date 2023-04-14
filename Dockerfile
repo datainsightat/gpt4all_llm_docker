@@ -63,3 +63,12 @@ RUN apt-get update -y && \
 # RUN apt-get install -y r-base-dev && \
 #     R -e "install.packages('IRkernel')" && \
 #     R -e "IRkernel::installspec(displayname = 'R 3.5', user = FALSE)"
+
+##########
+# FINISH #
+##########
+
+ADD docker_start.sh /docker_start.sh
+
+#Run at container start
+CMD ["/bin/bash","/docker_start.sh"]
